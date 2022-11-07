@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
+import { Employee } from '../employee';
+import { EmployeeService } from '../employee.service';
 import { User } from '../user';
 import { UserService } from '../user.service';
 
@@ -11,23 +13,28 @@ import { UserService } from '../user.service';
 })
 export class SigninComponent implements OnInit {
 
-  user:User;
+  
+  employee : Employee = new Employee();
 
-  constructor(private userservice:UserService,private router:Router) {
-    this.user = new User();
+  constructor(private employeeService:EmployeeService,private router:Router) {
+    
    }
 
   ngOnInit(): void {
   }
   
-  loginSubmit() {
-    console.log(this.user.username);
-    console.log(this.user.password);
-    const isLogin = this.userservice.loginUser(this.user);
-    if (isLogin) {
-      this.router.navigate(['']);
-    } else {
-      this.router.navigate(['/loginpage']);
-    }
+  userlogin() {
+    console.log(this.employee)
+    this.employeeService.userlogin(this.employee).subscribe(data=>{
+      alert("login successfull")
+      this.goToadb();
+    });
+  }
+    
+  goToadb(){
+    
+    this.router.navigate([''])
+
+  
   }
 }

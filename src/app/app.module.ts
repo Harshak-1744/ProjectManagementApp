@@ -36,6 +36,18 @@ import { MapchartComponent } from './mapchart/mapchart.component';
 import { CompsComponent } from './comps/comps.component';
 import {MatSelectModule} from '@angular/material/select';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { TreeviewComponent } from './treeview/treeview.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+
+
+import {MatTreeModule} from '@angular/material/tree';
+import { CalenderComponent } from './calender/calender.component';
+import { MailsComponent } from './mails/mails.component';
+import { LeadsComponent } from './leads/leads.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +64,12 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     MapchartComponent,
     CompsComponent,
     EmployeeListComponent,
+    ContactsComponent,
+    TreeviewComponent,
+    CalenderComponent,
+    MailsComponent,
+    LeadsComponent,
+    
     
    
   ],
@@ -76,6 +94,11 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     HighchartsChartModule,
     MatPaginatorModule,
     MatSelectModule,
+    MatTreeModule,
+    CalendarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

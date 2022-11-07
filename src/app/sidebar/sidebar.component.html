@@ -12,9 +12,9 @@
      <mat-form-field appearance="fill">
         <mat-label>Components</mat-label>
         <mat-select #mode value="components">
-          <mat-option value="mails">Mails</mat-option>
-          <mat-option value="time line">Time Line</mat-option>
-          <mat-option value="tree view">Tree View</mat-option>
+          <mat-option value="mails" routerLink="/mails" routerLinkActive="active">Mails</mat-option>
+          
+          <mat-option value="tree view" routerLink="/tree" routerLinkActive="active">Tree View</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -36,7 +36,7 @@
 
     <h2 matSubheader>Tools</h2>
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/cont">
         <mat-icon>import_contacts</mat-icon>
         Contacts
     </a>

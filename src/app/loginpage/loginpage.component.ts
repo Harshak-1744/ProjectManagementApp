@@ -34,7 +34,7 @@ export class LoginpageComponent implements OnInit {
   }
     
   goToEmployeeList(){
-    this.router.navigate(['/employees'])
+    this.router.navigate(['/empl'])
 
   }
 

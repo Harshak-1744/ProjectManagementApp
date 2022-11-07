@@ -10,6 +10,7 @@ export class EmployeeService {
 
   private baseURL="http://localhost:8089/api/employees";
   private baseurl="http://localhost:8089/api/addemployees";
+  private baseURL2="http://localhost:8089/api/userlogin";
   
     constructor(private httpClient:HttpClient) { }
   
@@ -21,6 +22,12 @@ export class EmployeeService {
       
       return this.httpClient.post((this.baseurl), employee);
     }
+
+    userlogin(employee:Employee): Observable<object>{
+      console.log(employee)
+      return this.httpClient.post((this.baseURL2),employee);
+    }
+    
   
   }
   

@@ -6,5 +6,6 @@ export class Employee {
     emailid!: string;
     username!:string;
     password!:string;
+    role!:string;
   
 }

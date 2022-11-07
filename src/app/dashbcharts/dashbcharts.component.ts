@@ -38,21 +38,21 @@ export class DashbchartsComponent implements OnInit {
         enabled: true,
       },
       series: [{
-        name: 'Ocean transport',
+        name: 'chrome',
         data: [13234, 12729, 11533, 17798, 10398, 12811, 15483, 16196, 16214]
     }, {
-        name: 'Households',
+        name: 'edge',
         data: [6685, 6535, 6389, 6384, 6251, 5725, 5631, 5047, 5039]
 
     }, {
-        name: 'Agriculture and hunting',
+        name: 'firefox',
         data: [4752, 4820, 4877, 4925, 5006, 4976, 4946, 4911, 4913]
     }, {
-        name: 'Air transport',
+        name: 'safari',
         data: [3164, 3541, 3898, 4115, 3388, 3569, 3887, 4593, 1550]
 
     }, {
-        name: 'Construction',
+        name: 'Internet explorer',
         data: [2019, 2189, 2150, 2217, 2175, 2257, 2344, 2176, 2186]
     }]
     };
